@@ -5,7 +5,7 @@ npm run setup
 npm start
 ```
 
-- @codesthings
+- [@codesthings/ns-onesignal](packages/ns-onesignal/README.md)
 
 # How to use?
 

@@ -1,0 +1,64 @@
+{
+  "root": "packages/ns-onesignal",
+  "projectType": "library",
+  "sourceRoot": "packages/ns-onesignal",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "options": {
+        "outputPath": "dist/packages/ns-onesignal",
+        "tsConfig": "packages/ns-onesignal/tsconfig.json",
+        "packageJson": "packages/ns-onesignal/package.json",
+        "main": "packages/ns-onesignal/index.d.ts",
+        "assets": [
+          "packages/ns-onesignal/*.md",
+          "packages/ns-onesignal/index.d.ts",
+          "LICENSE",
+          {
+            "glob": "**/*",
+            "input": "packages/ns-onesignal/platforms/",
+            "output": "./platforms/"
+          }
+        ],
+        "dependsOn": [
+          {
+            "target": "build.all",
+            "projects": "dependencies"
+          }
+        ]
+      }
+    },
+    "build.all": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "commands": ["node tools/scripts/build-finish.ts ns-onesignal"],
+        "parallel": false
+      },
+      "outputs": ["dist/packages/ns-onesignal"],
+      "dependsOn": [
+        {
+          "target": "build.all",
+          "projects": "dependencies"
+        },
+        {
+          "target": "build",
+          "projects": "self"
+        }
+      ]
+    },
+    "focus": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "commands": ["nx g @nativescript/plugin-tools:focus-packages ns-onesignal"],
+        "parallel": false
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": ["packages/ns-onesignal/**/*.ts"]
+      }
+    }
+  },
+  "tags": []
+}

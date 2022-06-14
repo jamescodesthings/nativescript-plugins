@@ -21,7 +21,8 @@
     ],
     "paths": {
       "@demo/shared": ["tools/demo/index.ts"],
-      "@codesthings/*": ["packages/*"]
+      "@codesthings/*": ["packages/*"],
+      "@codesthings/ns-onesignal": ["packages/ns-onesignal/index.d.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

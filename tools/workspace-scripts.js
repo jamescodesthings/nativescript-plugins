@@ -63,6 +63,13 @@ module.exports = {
     // packages
     // build output is always in dist/packages
     '@codesthings': {
+      // @codesthings/ns-onesignal
+      'ns-onesignal': {
+        build: {
+          script: 'nx run ns-onesignal:build.all',
+          description: '@codesthings/ns-onesignal: Build',
+        },
+      },
       'build-all': {
         script: 'nx run-many --target=build.all --all',
         description: 'Build all packages',
@@ -73,6 +80,10 @@ module.exports = {
       description: '_____________  Focus (VS Code supported)  _____________',
     },
     focus: {
+      'ns-onesignal': {
+        script: 'nx run ns-onesignal:focus',
+        description: 'Focus on @codesthings/ns-onesignal',
+      },
       reset: {
         script: 'nx g @codesthings/plugin-tools:focus-packages',
         description: 'Reset Focus',
