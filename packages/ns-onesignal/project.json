@@ -13,11 +13,17 @@
         "assets": [
           "packages/ns-onesignal/*.md",
           "packages/ns-onesignal/index.d.ts",
+          "packages/ns-onesignal/references.d.ts",
           "LICENSE",
           {
             "glob": "**/*",
             "input": "packages/ns-onesignal/platforms/",
             "output": "./platforms/"
+          },
+          {
+            "glob": "**/*",
+            "input": "packages/ns-onesignal/typings/",
+            "output": "./typings/"
           }
         ],
         "dependsOn": [

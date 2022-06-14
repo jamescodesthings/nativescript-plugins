@@ -1,3 +1,5 @@
-import { NsOnesignalCommon } from './common';
+// import { NsOnesignalCommon } from './common';
 
-export declare class NsOnesignal extends NsOnesignalCommon {}
+// export declare class NsOnesignal extends NsOnesignalCommon {}
+
+// export * from './typings/onesignal.ios'
