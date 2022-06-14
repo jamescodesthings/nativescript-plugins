@@ -1,7 +1,7 @@
 {
   "name": "@codesthings/ns-onesignal",
   "version": "1.0.0",
-  "description": "Add a plugin description",
+  "description": "OneSignal integration for Nativescript",
   "main": "index",
   "typings": "index.d.ts",
   "nativescript": {
@@ -19,7 +19,8 @@
     "JavaScript",
     "TypeScript",
     "iOS",
-    "Android"
+    "Android",
+    "OneSignal"
   ],
   "author": {
     "name": "JamesCodesThings",

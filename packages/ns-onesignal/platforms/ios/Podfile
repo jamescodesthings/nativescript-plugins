@@ -1,0 +1,2 @@
+# Include the OneSignal pod
+pod 'OneSignal', '>= 3.0', '< 4.0'
