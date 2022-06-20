@@ -1,6 +1,6 @@
 # @codesthings/ns-onesignal
 
-OneSignal integration for Nativescript
+OneSignal integration for Nativescript. At the moment this plugin does not contain any custom code. It adds the required Onesignal libraries for iOS & Android, incl. their type definitions, which can then be integrated using the OneSignal docs.
 
 ```shell
 ns plugin add @codesthings/ns-onesignal
