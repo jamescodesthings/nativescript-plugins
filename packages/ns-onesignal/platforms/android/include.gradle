@@ -3,9 +3,9 @@ buildscript {
         mavenCentral()
         gradlePluginPortal()
     }
-    dependencies {
-        classpath 'gradle.plugin.com.onesignal:onesignal-gradle-plugin:[0.12.10, 0.99.99]'
-    }
+//     dependencies {
+//         classpath 'gradle.plugin.com.onesignal:onesignal-gradle-plugin:[0.12.10, 0.99.99]'
+//     }
 }
 
 allprojects {
@@ -13,10 +13,10 @@ allprojects {
         mavenCentral()
     }
 }
-
-plugins {
-    id 'com.onesignal.androidsdk.onesignal-gradle-plugin'
-}
+//
+// plugins {
+//     id 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+// }
 
 dependencies {
     implementation 'com.onesignal:OneSignal:[4.0.0, 4.99.99]'
