@@ -1,6 +1,6 @@
 {
   "name": "@codesthings/ns-onesignal",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "OneSignal integration for Nativescript",
   "main": "index",
   "typings": "index.d.ts",
